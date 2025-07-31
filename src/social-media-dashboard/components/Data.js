@@ -18,7 +18,8 @@ export let platForms =  [
         iconUpDown:{
         img:iconUp
        },
-        visit:'99 '
+        visit:'99 ',
+        borderColor:"hsl(203, 89%, 53%)"
     },
     {
         id: 2,
@@ -32,7 +33,8 @@ export let platForms =  [
         iconUpDown:{
         img:iconUp
        },
-        visit:'1099'
+        visit:'1099',
+        borderColor:"hsl(37, 97%, 70%,hsl(5, 77%, 71%), hsl(329, 70%, 58%)"
     },
     {
         id: 3,
@@ -46,7 +48,8 @@ export let platForms =  [
         iconUpDown:{
         img:iconUp
        },
-        visit:'12'
+        visit:'12',
+        borderColor:"hsl(208, 92%, 53%)"
     },
     {
         id: 4,
@@ -103,7 +106,7 @@ export let overviewData = [
         img:iconUp
        },
        percentageStats:'2257%'
-    },
+    }, 
     {
        id:4,
        stats:"Profile Views",

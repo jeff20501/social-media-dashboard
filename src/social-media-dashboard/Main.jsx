@@ -29,7 +29,7 @@ export function Page(){
     function darkMode(){
         setDark(preBool=>!preBool)
         console.log(dark)
-    }
+    } 
     return(
         <>  
             <main className="wrapper">
