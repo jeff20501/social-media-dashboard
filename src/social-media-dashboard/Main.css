@@ -39,6 +39,7 @@ body{
     max-inline-size: 1500px;
     margin: 0 auto;
     padding: 20px;
+    transition: .3s;
 
 }
 
@@ -103,7 +104,7 @@ p{
 
 .button{
     background: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
-    inline-size: 65px;
+    inline-size: 60px;
     block-size: 25px;
     border-radius: 20px;
     cursor: pointer;
@@ -111,33 +112,33 @@ p{
     display: flex;
     align-items: center;
     padding: 5px;
-    transition: .4s;
+    transition: .3s;
     box-shadow: inset 0px 5px 10px hsl(0, 0%, 3%), inset 0px -5px 10px hsl(0, 100%, 100%) ;
 }
 
-.button::before{
+.button::after{
     position: absolute;
     content: '';
     background: linear-gradient(to right, hsl(0, 100%, 100%), hsl(0, 100%, 100%));
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    transition: .4s;
+    transition: .3s;
 }
 
 input:checked + .button{
     background: linear-gradient(to right, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
 }
 
-input:checked + .button::before{
-    transform: translateX(35px);
+input:checked + .button::after{
+    transform: translateX(30px);
 }
 
 input{
     display: none;
 }
 
-label:active::before{
+label:active::after{
     width:30px;
 }
 
@@ -152,6 +153,7 @@ label:active::before{
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
+    transition: .3s;
 }
 
 .top_socials:hover{
@@ -222,6 +224,7 @@ label:active::before{
 .tabs:hover{
     background-color: var(--tabsHover);
     cursor: pointer;
+    transition: .3s;
 }
 
 h3{
