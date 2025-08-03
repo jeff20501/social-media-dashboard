@@ -18,8 +18,9 @@ export let platForms =  [
         iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
         visit:'99 ',
-        borderColor:"hsl(203, 89%, 53%)"
+        gradientGlow:"to right, hsl(203, 89%, 53%), hsl(203, 89%, 53%)"
     },
     {
         id: 2,
@@ -33,8 +34,9 @@ export let platForms =  [
         iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
         visit:'1099',
-        borderColor:"hsl(37, 97%, 70%,hsl(5, 77%, 71%), hsl(329, 70%, 58%)"
+        gradientGlow:"to right, hsl(37, 97%, 70%),hsl(5, 77%, 71%), hsl(329, 70%, 58%)"
     },
     {
         id: 3,
@@ -48,8 +50,9 @@ export let platForms =  [
         iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
         visit:'12',
-        borderColor:"hsl(208, 92%, 53%)"
+        gradientGlow:"to right, hsl(208, 92%, 53%), hsl(208, 92%, 53%)"
     },
     {
         id: 4,
@@ -63,7 +66,9 @@ export let platForms =  [
         iconUpDown:{
         img:iconDown
        },
-        visit:'144'
+       trueFalse: false,
+        visit:'144',
+        gradientGlow: "to right, hsl(348, 97%, 39%), hsl(348, 97%, 39%)"
     }
 ]
 
@@ -79,6 +84,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
        percentageStats:'3%'
     },
     {
@@ -92,6 +98,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconDown
        },
+       trueFalse: false,
        percentageStats:'2%'
     },
     {
@@ -105,6 +112,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
        percentageStats:'2257%'
     }, 
     {
@@ -118,6 +126,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
        percentageStats:'1375%'
     },
     {
@@ -131,6 +140,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
        percentageStats:'303%'
     },
     {
@@ -144,6 +154,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconUp
        },
+       trueFalse: true,
        percentageStats:'507%'
     },
     {
@@ -157,6 +168,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconDown
        },
+       trueFalse: false,
        percentageStats:'19%'
     },
     {
@@ -170,6 +182,7 @@ export let overviewData = [
        iconUpDown:{
         img:iconDown
        },
+       trueFalse: false,
        percentageStats:'12%'
     },
    

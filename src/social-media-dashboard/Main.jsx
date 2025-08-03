@@ -2,7 +2,7 @@ import { Header, Header2 } from "./components/Header"
 import { DashBoard } from "./components/dashboard"
 import { Overview } from "./components/overview"
 import {platForms, overviewData} from "./components/Data"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 export function Page(){
     const data = platForms.map((data)=>{
         return <DashBoard
@@ -11,7 +11,7 @@ export function Page(){
                 />
        
     })
-
+ 
     const overview =overviewData.map((overview)=>{
         return <Overview 
                     key={overview.id}
@@ -19,23 +19,29 @@ export function Page(){
                 />
     }) 
 
-    const [dark, setDark]=useState(true)
-    const darkTheme = localStorage.getItem(JSON.stringify(dark))
-    
-    const enableDark = ()=>{
-        
+    const [theme, setTheme]= useState(()=>{
+        return localStorage.getItem("darkmode")==="active"
+    })
+
+    useEffect(()=>{
+        if(theme){
+            document.body.classList.add("darkmode")
+            localStorage.setItem("darkmode", "active")
+        }
+        else{
+            document.body.classList.remove("darkmode")
+            localStorage.setItem("darkmode", null)
+        }
+    }, [theme])
+
+    const handleClick=()=>{
+        setTheme(preTheme=>!preTheme)
     }
 
-    function darkMode(){
-        setDark(preBool=>!preBool)
-        console.log(dark)
-    } 
     return(
         <>  
             <main className="wrapper">
-                <Header 
-                    darkMode={darkMode}
-                />
+                <Header handleClick={handleClick} theme={theme} />
                 <article className="main">
                     {data}
                 </article>

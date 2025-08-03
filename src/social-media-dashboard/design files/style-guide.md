@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
+### Primary 
 
 - Green 500: hsl(163, 72%, 41%)
 - Red 500: hsl(356, 69%, 56%)

@@ -1,6 +1,12 @@
+import { clsx } from "clsx"
+
 export function DashBoard(props){
+    const trueFalse = props.data.trueFalse
+    const fontColor= clsx('normal', trueFalse?'rise':'fall')
     return(
-        <article className="top_socials">                       
+        <article className="top_socials"
+                 style={{ "--gradient-glow": `linear-gradient(${props.data.gradientGlow})` }}
+        >                       
             <div>
                 <img src={props.data.logo.img} alt={props.data.logo.alt}/>
                 <p>{props.data.username}</p>
@@ -9,9 +15,9 @@ export function DashBoard(props){
             <p className="numberOf">{props.data.numberOf}</p>
             <div className="rates">
                 <img src={props.data.iconUpDown.img} />
-                <p>{props.data.visit} Today</p>
+                <p className={fontColor}>{props.data.visit} Today</p>
             </div>
             
         </article>
     )
-}
+} 

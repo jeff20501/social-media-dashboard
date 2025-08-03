@@ -1,4 +1,9 @@
-# React + Vite
+# React + Vite  SocialMedia DashBoard with active dark and light theme
+
+## Screenshot
+![](./screenshots/Screenshot%202025-08-03%20at%2019-18-12%20Social%20DashBoard.png)
+
+![](./screenshots/Screenshot%202025-08-03%20at%2019-17-55%20Social%20DashBoard.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -1,5 +1,8 @@
-
+import { clsx } from "clsx"
 export function Overview(props){
+    const trueFalse = props.overview.trueFalse
+    const fontColor= clsx('normal', trueFalse?'rise':'fall')
+
     return(
         <article className="tabs">
             <div className='top'>
@@ -10,10 +13,10 @@ export function Overview(props){
                 <h3>{props.overview.numberStats}</h3>
                 <div className="percentageStats">
                     <img src={props.overview.iconUpDown.img}/>
-                    <p>{props.overview.percentageStats}</p>
+                    <p className={fontColor}>{props.overview.percentageStats}</p>
                 </div>
                 
             </div>
         </article>
     )
-}
+} 
