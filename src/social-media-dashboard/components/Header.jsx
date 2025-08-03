@@ -6,7 +6,7 @@ export function Header (props){
                     <p> Total Followers: 23,004</p>
                 </div>
                 <div className="toggle">
-                    <span>{props.theme?"Switch to dark":"Switch to light"}</span>
+                    <span>{props.theme?"Switch to light":"Switch to dark"}</span>
                     <input type="checkbox" id="darkLight" onClick={props.handleClick}/>
                     <label htmlFor="darkLight" className="button"></label>
                 </div>
