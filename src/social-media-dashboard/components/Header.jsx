@@ -7,7 +7,7 @@ export function Header (props){
                 </div>
                 <div className="toggle">
                     <span>{props.theme?"Switch to light":"Switch to dark"}</span>
-                    <input type="checkbox" id="darkLight" onClick={props.handleClick}/>
+                    <input checked={props.checked} type="checkbox" id="darkLight" onClick={props.handleClick}/>
                     <label htmlFor="darkLight" className="button"></label>
                 </div>
         </article>

@@ -130,7 +130,7 @@ p{
     background: linear-gradient(to right, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
 }
 
-.header1 .toggle input:checked + .button::before{
+.darkmode .header1 .toggle input:checked + .button::before{
     transform: translateX(30px);
 }
 

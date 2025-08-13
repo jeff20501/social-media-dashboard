@@ -11,17 +11,17 @@ export function Page(){
                 />
        
     })
+    
+    const [theme, setTheme]= useState(()=>{
+        return localStorage.getItem("darkmode")==="active"
+    })
  
     const overview =overviewData.map((overview)=>{
         return <Overview 
                     key={overview.id}
                     overview={overview}
                 />
-    }) 
-
-    const [theme, setTheme]= useState(()=>{
-        return localStorage.getItem("darkmode")==="active"
-    })
+    })    
 
     useEffect(()=>{
         if(theme){
@@ -41,7 +41,7 @@ export function Page(){
     return(
         <>  
             <main className="wrapper">
-                <Header handleClick={handleClick} theme={theme} />
+                <Header handleClick={handleClick} theme={theme} checked={Boolean(theme)}/>
                 <article className="main">
                     {data}
                 </article>
